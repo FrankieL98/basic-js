@@ -62,7 +62,7 @@ function minesweeper(matrix) {
         }
       }
 
-      outer[i][j] = mineCounter;
+      outer[i][j] = mineCount;
     }
   }
 
