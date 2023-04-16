@@ -29,12 +29,13 @@ const chainMaker = {
     }
   },
   reverseChain() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    this.chain.reverse();
+    return this;
   },
   finishChain() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    let result = this.chain.join('~~');
+    this.chain = [];
+    return result;
   }
 };
 
