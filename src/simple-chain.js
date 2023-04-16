@@ -14,9 +14,8 @@ const chainMaker = {
     if (typeof value === 'undefined') {
       this.chain.push('( )');
     } else {
-      this.chain.push(`${value}`);
+      this.chain.push(`( ${value} )`);
     }
-
     return this;
   },
   removeLink(position) {
