@@ -16,7 +16,7 @@ function deleteDigit(n) {
   for (let i = 0; i < n.toString().length; i++) {
     let stringArray = Array.from(n.toString());
     stringArray.splice(i, 1);
-    array.push(stArr.join(''));
+    array.push(stringArray.join(''));
   }
   return Number(array.sort()[array.length - 1]);
 }
