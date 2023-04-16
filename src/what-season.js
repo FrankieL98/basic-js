@@ -25,13 +25,13 @@ function getSeason(date) {
 
   let month = date.getMonth();
 
-  if (month === 12 || month === 0 || month === 1) {
+  if (month === 11 || month === 0 || month === 1) {
     return winter;
-  } else if (month >=3 && month <=5) {
+  } else if (month >=2 && month <=4) {
     return spring;
-  } else if (month >=6 && month <= 8) {
+  } else if (month >=5 && month <= 7) {
     return summer;
-  } else if (month >=9 && month <= 11) {
+  } else if (month >=8 && month <= 10) {
     return autumn;
   }
 }
