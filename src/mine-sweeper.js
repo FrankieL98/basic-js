@@ -27,7 +27,7 @@ function minesweeper(matrix) {
   let outer = [];
   for (let i = 0; i < matrix.length; i++) {
     outer.push([]);
-    for (let j = 0; j < matrix[i]; j++) {
+    for (let j = 0; j < matrix[i].length; j++) {
       let mineCount = 0;
 
       if (typeof matrix[i - 1] !== 'undefined') {
@@ -35,7 +35,7 @@ function minesweeper(matrix) {
           mineCount += 1;
         }
         if (matrix[i - 1][j]) {
-          mineCount +=1;
+          mineCount += 1;
         }
         if (matrix[i - 1][j + 1]) {
           mineCount += 1;
@@ -50,7 +50,7 @@ function minesweeper(matrix) {
         mineCount += 1;
       }
 
-      if (typeof matrix[i + i] !== 'undefined') {
+      if (typeof matrix[i + 1] !== 'undefined') {
         if (matrix[i + 1][j - 1]) {
           mineCount += 1;
         }
@@ -62,7 +62,7 @@ function minesweeper(matrix) {
         }
       }
 
-      outer[i][j] = mineCount;
+      outer[i][j] = mineCounter;
     }
   }
 
