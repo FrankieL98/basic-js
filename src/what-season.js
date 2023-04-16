@@ -15,7 +15,7 @@ function getSeason(date) {
   if (!date) {
     return 'Unable to determine the time of year!';
   } else if (!(date instanceof Date) || Object.getOwnPropertyNames(date).length > 0) {
-    throw new Error('Invalid date!');
+    throw new Error('!Invalid date!');
   }
 
   const winter = 'winter';
