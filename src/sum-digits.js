@@ -16,7 +16,7 @@ function getSumOfDigits(n) {
   while (n > 9) {
     n = 0;
     for (let i = 0; i < String(n).length; i++) {
-      n += +(String(n)[i]);
+      n += Number(String(n)[i]);
     }
   }
 
